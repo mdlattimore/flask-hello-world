@@ -24,7 +24,7 @@ def search(search_query):
 @app.route("/name/<name>")
 def index(name):
     if name.lower() == "michael":
-        return "Hello, {}".format(name)
+        return "Hello, {}".format(name.capitalize())
     else:
         return "Not Found", 404
 
